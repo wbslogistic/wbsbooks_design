@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<!--[if IE 8]>     <html lang="en-gb" dir="ltr" class='ie8 lt-ie9 lt-ie10 com_mijoshop view-latest itemid-435 j33 mm-hover"> <![endif]-->
+<!--[if IE 9]>     <html lang="en-gb" dir="ltr" class='ie9 lt-ie10 com_mijoshop view-latest itemid-435 j33 mm-hover'> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html slick-uniqueid="3" dir="ltr" class="com_mijoshop view-latest itemid-435 j33 mm-hover no-touch" lang="en-gb">
+<!--<![endif]-->
+<head>
+<title>Wishlist</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link media="all" href="assets/css/widgetbig060.css" type="text/css" rel="stylesheet">
+<link media="all" href="assets/css/widget120.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/css-a0890.css" type="text/css">
+<link rel="stylesheet" href="assets/css/css-fa76a.css" type="text/css">
+<link rel="stylesheet" href="assets/css/css-20eee.css" type="text/css">
+<link rel="stylesheet" href="assets/css/css-3ff05.css" type="text/css">
+
+<script src="assets/js/jquery_002.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.js" type="text/javascript"></script>
+<script src="assets/js/script.js" type="text/javascript"></script>
+<script src="assets/js/jquery_008.js" type="text/javascript"></script>
+<script src="assets/js/mootools-more.js" type="text/javascript"></script>
+
+<link href="assets/css/css.css" rel="stylesheet" type="text/css">
+<link href="assets/css/css_002.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="assets/css/site_style.css" type="text/css">
+</head>
+
+<body>
+<div class="t3-wrapper"> 
+  <!-- // Need these wrapper for off-canvas menu. Remove if you don't use of-canvas -->
+  
+  <div id="toolbar">
+    <div class="container">
+      <div class="row">
+      <div class="toolbar-ct col-xs-12 col-md-6  hidden-sm hidden-xs">
+          <div class="toolbar-ct-5">
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><img alt="English" src="assets/img/eng.png">&nbsp;English</button>
+              <div class="dropdown-menu" role="menu">
+                <div class="t3-module module">
+                  <div class="module-inner">
+                    <div class="module-ct">
+                      <ul class="nav">
+                        <li><img class="fa-add2" src="assets/img/ru.png" /><a href="#">Russian</a></li>
+                        <li><img class="fa-add2" src="assets/img/eng.png" /><a href="#">English</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="toolbar-ct-5">
+            <div class="btn-group">
+              <i class="fa fa-dollar fa-add"></i><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Dollar</button>
+              <div class="dropdown-menu" role="menu">
+                <div class="t3-module module">
+                  <div class="module-inner">
+                    <div class="module-ct">
+                      <ul class="nav">
+                        <li><i class="fa fa-dollar fa-add"></i><a href="#">Dollar</a></li>
+                        <li><i class="fa fa-ruble fa-add"></i><a href="#">Ruble</a></li>
+                        <li><i class="fa fa-euro fa-add"></i><a href="#">Euro</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="toolbar-ct toolbar-ct-right col-xs-12 col-md-6 pull-right">
+          <div class="toolbar-ct-3">
+            <div class="btn-group">
+              <i class="fa fa-user fa-add"></i><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">My Account</button>
+              <div class="dropdown-menu" role="menu">
+                <div class="t3-module module">
+                  <div class="module-inner">
+                    <div class="module-ct">
+                      <ul class="nav">
+                        <li><a href="account.html">My details</a></li>
+                        <li><a href="order_history.html">My orders</a></li>
+                        <li><a href="wishlist.html">My wishlist</a></li>
+                        <li><a href="notifications.html">My notifications</a></li>
+                        <li><a href="settings.html">My settings</a></li>
+                        <li><a href="#">Log out</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="toolbar-ct-2 ">
+            <div class="t3-module module">
+              <div class="module-inner">
+                <div class="module-ct">
+                  <div id="header_oc">
+                    <div id="cart" style="left:0 !important;">
+                      <div class="heading">
+                        <i class="fa fa-shopping-cart"></i> <a href="order.html">Shopping Cart <span id="cart-total">(0)</span></a></div>
+                          <div class="content_oc">
+                            <div class="empty">Your shopping cart is empty!</div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- HEADER -->
+  <header id="t3-header" class="wrap t3-header navbar-fixed-top">
+    <div class="container">
+      <div class="row"> 
+        <!-- LOGO -->
+        <div class="col-xs-12 col-md-3 logo col-sm-6">
+          <div class="logo-image"> <a href="index.html"> <img class="logo-img" src="assets/img/logo.png" style="width:95%"></a></div>
+        </div>
+        <!-- //LOGO --> 
+        
+        <!-- MAIN NAVIGATION -->
+        <nav id="t3-mainnav" class="col-xs-12 col-md-6 t3-mainnav navbar navbar-default hidden-sm"> 
+          <div class="navbar-header"> </div>
+          <div class="t3-navbar navbar-collapse collapse">
+
+            <div class="t3-megamenu animate slide" data-duration="400" data-responsive="true">
+              <ul class="nav navbar-nav level0">
+                <li><a href="#">What's new?</a></li>
+                <li><a href="#">Specials</a></li>
+                <li><a href="bulk.html">Bulk order</a></li>
+                <li><a href="about.html">About Us</a> </li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- //MAIN NAVIGATION -->
+        
+        <div class="col-xs-12 col-md-3 pull-right col-sm-6"> 
+          <!-- HEAD SEARCH -->
+          <div class="head-search ">
+            <div style="text-align:right">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search'"  >
+                <span class="input-group-btn">
+                <button type="button" class="btn btn-default" onClick="javascript:window.location='search.html'"><span class="icon-search icon-white"></span></button>
+                </span>
+              </div>
+              <a href="search-2.html" class="search-adv">Advanced search</a>
+            </div>
+          </div>
+          <!-- //HEAD SEARCH --> 
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- //HEADER --> 
+  
+<div id="t3-mainbody" class="container t3-mainbody has-sidebar-left has-col-md-3">
+    <div class="row"> 
+      
+      <!-- MAIN CONTENT -->
+      <div id="t3-content" class="t3-content col-xs-12 col-sm-12 col-md-9 col-md-push-3">
+        <div id="system-message-container" style="display: none;"> </div>
+        <div id="container_oc">
+          <div id="header_oc" style="display:none;">
+            <form>
+              <div id="currency">Currency<br>
+                <a title="Euro" onclick="">€</a> <a title="Pound Sterling" onclick="">£</a> <a title="US Dollar"><b>$</b></a>
+              </div>
+            </form>
+            <div id="cart">
+              <div class="heading">
+                <h4>Shopping Cart</h4>
+                <a><span id="cart-total">0 item(s) - $0.00</span></a></div>
+              <div class="content_oc">
+                <div class="empty">Your shopping cart is empty!</div>
+              </div>
+            </div>
+            
+            <div id="search_oc">
+              <div class="button_oc-search"></div>
+              <input style="width: 120px !important;" name="search_oc" value="Search" onclick="this.value = '';" onkeydown="this.style.color = '#000000';" type="text">
+            </div>
+            <div id="welcome"> Welcome visitor you can <a href="#">login</a> or <a href="#">create an account</a>. </div>
+            <div class="links"><a href="#">Home</a><a href="#" id="wishlist-total">Wish List (0)</a><a href="#">My Account</a><a href="#">Shopping Cart</a><a href="#">Checkout</a></div>
+          </div>
+          
+          
+          <div id="notification"></div>
+          
+          
+          <div id="content_oc">
+            <div class="box_oc">
+              <div class="box-heading">
+                <h1 class="mijoshop_heading_h1">My wishlist</h1>
+              </div>
+              <div class="box-content">
+                <div class="product-filter">
+                  <div class="display">Display: <a onclick="display('list');"><i class="fa fa-th-list"></i></a><span><i class="fa fa-th-large"></i></span></div>
+                  <!--<div class="product-compare"><a href="#" id="compare-total">Product Compare (0)</a></div>-->
+                  <div class="limit"><a href="#" class="btn btn-primary">Remove all</a>
+                  </div>
+                  
+                </div>
+                <div class="product-grid row row-5">
+                
+                  <div class="product-item-0">
+                    <div class="actions">
+                      <div class="image"><a href="book.html"><img src="assets/img/01.png" title="Inferno" alt="Inferno"></a></div>
+                    </div>      
+                    <div class="name"><a href="#">Inferno</a></div>
+                    <div class="author"><a href="#">Dan Brown</a></div>
+                    <div class="description">Curabitur id lectus erat. Fusce accumsan, arcu sit amet aliquam suscipit, lorem sapien tempus mi, at..</div> 
+                    <div class="price">€11.20<br>
+                      <span class="price-tax">Ex Tax: $15.00</span> </div>    
+                    <div class="lemmaBook">
+                        <div class="cartAdd">
+                        	<!--<input type="button" class="btn btn-primary" value="Add to Cart">-->
+                            <button type="submit" name="btn btn-primary" id="btnSave" class="btn btn-primary">
+                                   <i class="fa-cart-add visible-sm-block"></i> <span class="hidden-sm">Add to Cart</span>
+                            </button>
+                        </div>
+                        <div class="wishlistAdd"><a title="Add to Wish List" onclick="#" class="active"><i class="fa fa-list"></i></a></div>         
+                    </div>         
+                  </div>
+                  
+                  
+                  <div class="product-item-1">
+                    <div class="actions">
+                      <div class="image"><a href="#"><img src="assets/img/02.png" title="And the Mountains Echoed" alt="And the Mountains Echoed"></a></div>
+                    </div>
+                    <div class="name"><a href="#">And the Mountains Echoed</a></div>
+                    <div class="author"><a href="#">Dan Brown</a></div>
+                    <div class="price">€8.94</div>
+                    <div class="lemmaBook">
+                        <div class="cartAdd">
+                            <button type="submit" name="btn btn-primary" id="btnSave" class="btn btn-primary">
+                                   <i class="fa-cart-add visible-sm-block"></i> <span class="hidden-sm">Add to Cart</span>
+                            </button>
+                        </div>
+                        <div class="wishlistAdd"><a title="Add to Wish List" onclick="#" class="active"><i class="fa fa-list"></i></a></div>             
+                    </div>
+                  </div>
+                  <div class="product-item-2">
+                    <div class="actions">
+                      <div class="image"><a href="#"><img src="assets/img/03.png" title="Fifty shades of grey" alt="Fifty shades of grey"></a></div>
+                    </div>
+                    <div class="name"><a href="#">Fifty shades of grey</a></div>
+                    <div class="price">€7.08</div>
+                    <div class="lemmaBook">
+                        <div class="cartAdd">
+                            <button type="submit" name="btn btn-primary" id="btnSave" class="btn btn-primary">
+                                   <i class="fa-cart-add visible-sm-block"></i> <span class="hidden-sm">Add to Cart</span>
+                            </button>
+                        </div>
+                        <div class="wishlistAdd"><a title="Add to Wish List" onclick="#" class="active"><i class="fa fa-list"></i></a></div>             
+                    </div>
+                  </div>
+                  <div class="product-item-3">
+                    <div class="actions">
+                      <div class="image"><a href="#"><img src="assets/img/04.png" title="The Cuckoo's Calling (Cormoran Strike) " alt="The Cuckoo's Calling (Cormoran Strike) "></a></div>
+                    </div>
+                    <div class="name"><a href="#">The Cuckoo's Calling (Cormoran Strike) </a></div>
+                    <div class="price">€10.34</div>
+                    <div class="lemmaBook">
+                        <div class="cartAdd">
+                            <button type="submit" name="btn btn-primary" id="btnSave" class="btn btn-primary">
+                                   <i class="fa-cart-add visible-sm-block"></i> <span class="hidden-sm">Add to Cart</span>
+                            </button>
+                        </div>
+                        <div class="wishlistAdd"><a title="Add to Wish List" onclick="#" class="active"><i class="fa fa-list"></i></a></div>            
+                    </div>
+                  </div>
+                  <div class="product-item-4">
+                    <div class="actions">
+                      <div class="image"><a href="#"><img src="assets/img/05.png" title=" 	The Book Thief " alt=" 	The Book Thief "></a></div>
+                    </div>
+                    <div class="name"><a href="#"> 	The Book Thief </a></div>
+                    <div class="price">€3.35</div>
+                    <div class="lemmaBook">
+                        <div class="cartAdd">
+                            <button type="submit" name="btn btn-primary" id="btnSave" class="btn btn-primary">
+                                   <i class="fa-cart-add visible-sm-block"></i> <span class="hidden-sm">Add to Cart</span>
+                            </button>
+                        </div>
+                        <div class="wishlistAdd"><a title="Add to Wish List" onclick="#" class="active"><i class="fa fa-list"></i></a></div>             
+                    </div>
+                  </div>
+                </div>
+                <!--<div class="pagination">
+                  <div class="results">Showing 1 to 6 of 6 (1 Pages)</div>
+                </div>-->
+              </div>
+            </div>
+				<script type="text/javascript"><!--
+                
+                    function display(view) {
+                        if (view == 'list') {
+                            jQuery('.product-grid').attr('class', 'product-list row');
+                            jQuery('.product-list > div').each(function(index, element) {
+                                html = '<div class="col-xs-12 col-sm-4 col-md-3">';
+                                
+                                var image = jQuery(element).find('.image').html();
+                                if (image != null) {
+                                    html += '<div class="image">' + image + '</div>';
+                                }
+                                html += '</div>';
+                                html += '<div class="left">';
+                                
+                                var price = jQuery(element).find('.price').html();
+                                if (price != null) {
+                                    html += '<div class="price">' + price + '</div>';
+                                }
+                
+                                html += '  <div class="name">' + jQuery(element).find('.name').html() + '</div>';  
+                                html += '  <div class="author">' + jQuery(element).find('.author').html() + '</div>';                
+                                html += '  <div class="description">' + jQuery(element).find('.description').html() + '</div>';
+                                html += '<div class="actions clearfix">';
+                                html += '  <div class="cartAdd">' + jQuery(element).find('.cartAdd').html() + '</div>';
+                                html += '  <div class="wishlistAdd">' + jQuery(element).find('.wishlistAdd').html() + '</div>';
+                                html += '</div>';
+                                html += '</div>';
+                                jQuery(element).html(html);
+                            });
+                
+                            jQuery('.display').html('Display: <span><i class="fa fa-th-list"></i></span> <a onclick="display(\'grid\');"><i class="fa fa-th-large"></i></a>');
+                
+                            jQuery.totalStorage('display', 'list');
+                        } else {
+                            jQuery('.product-list').attr('class', 'product-grid row row-5');                
+                            jQuery('.product-grid > div').each(function(index, element) {
+                                html = '';
+                
+                                var image = jQuery(element).find('.image').html();
+                                html += '<div class="actions">';
+                
+                                if (image != null) {
+                                    html += '<div class="image">' + image + '</div>';
+                                }
+                                html += '</div>';
+								
+								
+                                html += '<div class="name">' + jQuery(element).find('.name').html() + '</div>';      
+                                html += '  <div class="author">' + jQuery(element).find('.author').html() + '</div>';                             
+                                html += '<div class="description">' + jQuery(element).find('.description').html() + '</div>';
+                
+                                var price = jQuery(element).find('.price').html();
+                                if (price != null) {
+                                    html += '<div class="price">' + price + '</div>';
+                                }
+								
+								html += '<div class="lemmaBook">';								
+                                html += '<div class="cartAdd">' + jQuery(element).find('.cartAdd').html() + '</div>';
+                                html += '<div class="wishlistAdd">' + jQuery(element).find('.wishlistAdd').html() + '</div>';
+                                html += '</div>';
+                                jQuery(element).html(html);
+                            });
+                
+                            jQuery('.display').html('Display: <a onclick="display(\'list\');"><i class="fa fa-th-list"></i></a><span><i class="fa fa-th-large"></i></span>');
+                            jQuery.totalStorage('display', 'grid');
+                        }
+                    }
+                
+                    view = jQuery.totalStorage('display');
+                
+                    if (view) {
+                        display(view);
+                    } else {
+                        display('grid');
+                    }
+                                        
+                //--></script>
+          </div>
+          
+          
+          
+          <div id="footer_oc" style="display:none;">
+            <div class="column">
+              <h3>Information</h3>
+              <ul>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="#">Delivery Information</a></li>
+                <li><a href="faq.html">Help and Support</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h3>Customer Service</h3>
+              <ul>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Site Map</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h3>Extras</h3>
+              <ul>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Gift Vouchers</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Specials</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h3>My Account</h3>
+              <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">Wish List</a></li>
+                <li><a href="#">Newsletter</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //MAIN CONTENT --> 
+      
+      <!-- SIDEBAR LEFT -->
+      <div class="t3-sidebar t3-sidebar-left col-xs-12 col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9  hidden-sm hidden-xs">
+        <div class="t3-module module " id="Mod107">
+          <div class="module-inner">
+            <h3 class="module-title "><span>Categories</span></h3>
+            <div class="module-ct">
+              <div class="box_oc" style="margin-bottom: 0px !important;">
+                <div>
+                  <div class="box-category">
+                    <ul>
+                      <li> <a href="catalog.html">Audiobooks</a> </li>
+                      <li> <a href="#">Books in Foreign Languages</a> </li>
+                      <li> <a href="#">Business books</a> </li>
+                      <li> <a href="#">Children and Parents</a> </li>
+                      <li> <a href="#">Fiction</a> </li>
+                      <li> <a href="#">Limited Edition</a> </li>
+                      <li> <a href="#">Non-Fiction</a> </li>
+                      <li> <a href="#">Reference Books</a> </li>
+                      <li> <a href="#">Training and education</a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="t3-module module  " id="Mod110">
+          <div class="module-inner">
+            <h3 class="module-title "><span>Publishers</span></h3>
+            <div class="module-ct">
+              <div class="box_oc" style="margin-bottom: 0px !important;">
+                <div>
+                  <div class="box-product">
+                    <div>
+                        <select class="form-control">
+                            <option>All</option>
+                            <option>Eksmo</option>
+                            <option>Spring</option>
+                            <option>Amazon</option>
+                            <option>Ozon</option>
+                        </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //SIDEBAR LEFT --> 
+      
+    </div>
+  </div>
+  
+  <div id="back-to-top" class="back-to-top hidden-xs hidden-sm deactive">
+    <button class="btn btn-primary"><i class="fa fa-caret-up"></i>Top</button>
+  </div>
+  
+  <!-- FOOTER -->
+  <footer id="t3-footer" class="wrap t3-footer"> 
+  
+  <!-- FOOT NAVIGATION -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 footer-info">
+        <div id="Mod145" class="t3-module module ">
+          <div class="module-inner">
+            <div class="module-ct">
+              <div class="custom">
+                <ul class="list-shipping">
+                  <li class="shipping-item"><i class="fa fa-lightbulb-o "></i><span class="title">What's new?</span> <span class="desc">text</span></li>
+                  <li class="exchange-item"><i class="fa fa-calendar"></i><span class="title">Coming soon</span> <span class="desc">text</span></li>
+                  <li class="support-item"><i class="fa fa-flash"></i><span class="title">Special</span> <span class="desc">text</span></li>
+                  <li class="support-item"><i class="fa fa-skype"></i><span class="title">Online support</span> <span class="desc">skype: wbsbooks</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 footer-links">
+        <div id="Mod97" class="t3-module module subcribe-frm ">
+          <div class="module-inner">
+            <h3 class="module-title "><span>Sign Up for news and offers</span></h3>
+            <div class="module-ct">
+              <div id="acymailing_module_formAcymailing88911" class="acymailing_module subcribe-frm">
+                <div id="acymailing_fulldiv_formAcymailing88911" class="acymailing_fulldiv">
+                  <form>
+                    <div class="acymailing_module_form row">
+                      <div class="col-md-6"><span class="acymailing_introtext">Make sure you dont miss interesting happenings by joining our newsletter program.</span></div>
+                      <div class="acymailing_form col-md-5">
+                        <div class="row">
+                          <div class="col-md-8 col-xs-8">
+                            <p class="onefield fieldacyemail">
+                              <label class="sr-only">E-mail</label>
+                              <span class="acyfield_email">
+                              <input type="text" value="" style="width:100%" class="inputbox">
+                              </span> </p>
+                          </div>
+                          <div class="col-md-4 col-xs-4 acysubbuttons">
+                            <input type="submit" value="Subscribe" class="button subbutton btn btn-red">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- SPOTLIGHT -->
+        <div class="t3-spotlight t3-footnav  row">
+          <div class=" col-lg-3 col-md-3 col-sm-4 col-xs-12">
+            <div id="Mod100" class="t3-module module ">
+              <div class="module-inner">
+                <h3 class="module-title "><span>Information</span></h3>
+                <div class="module-ct">
+                  <div style="margin-bottom: 0px !important;" class="box_oc">
+                    <div>
+                      <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="news.html">Newsletter</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="faq.html">Help and Support</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-lg-6 col-md-6 col-sm-8 col-xs-12">
+            <div id="Mod105" class="t3-module module menu-2col ">
+              <div class="module-inner">
+                <h3 class="module-title "><span>My Account</span></h3>
+                <div class="module-ct">
+                  <div style="margin-bottom: 0px !important;" class="box_oc">
+                    <div>
+                      <ul>
+                        <li><a href="login.html">Login</a> / <a href="register.html">Register</a></li>
+                        <li><a href="password_reset.html">Forgotten Password</a></li>
+                        <li><a href="account.html">My Account</a></li>
+                        <li><a href="wishlist.html">Wish List</a></li>
+                        <li><a href="order_history.html">Order History</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-lg-3 col-md-3  col-sm-3 hidden-sm  col-xs-12">
+            <div id="Mod99" class="t3-module module ">
+              <div class="module-inner">
+                <h3 class="module-title "><span>Location</span></h3>
+                <div class="module-ct">
+                  <div class="custom">
+                    <p>Address: 2411 Any Street. Any Town. United Kingdom.</p>
+                    <p>Mail to: <a href="mailto:support@yourstore.com">support@yourstore.com</a></p>
+                    <p>Phone: +123 456 7890</p>
+                      <p>Fax: +123 456 7890</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SPOTLIGHT --> 
+      </div>
+    </div>
+  </div>
+  <!-- //FOOT NAVIGATION -->
+  
+  <section class="t3-copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 copyright "> <small> Copyright © 2014 WBS Books Privacy Notice | Conditions of Use </small></div>
+        <div class="col-md-4 poweredby"> <img src="assets/img/payment_image_paypal.png" />  <img src="assets/img/payment_image_maestro.png" />  <img src="assets/img/payment_image_visa.png" /> </div>
+      </div>
+    </div>
+  </section>
+</footer>
+  <!-- //FOOTER --> 
+</div>
+
+</body>
+</html>
