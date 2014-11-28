@@ -2927,7 +2927,7 @@ ul.box-filter > li ul {
 	text-align:center
 }
 .cart-info thead .name,.cart-info thead .model,.cart-info thead .quantity {
-	text-align:left
+	text-align:center
 }
 .cart-info thead .price,.cart-info thead .total {
 	text-align:right

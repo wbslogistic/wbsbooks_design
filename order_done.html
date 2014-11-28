@@ -178,79 +178,143 @@
               <div class="box-heading">
               <div class="row">
               	<div class="span6"><h1 class="mijoshop_heading_h1">Status order: Wait pay</h1></div>
-              	<div class="span6"><input type="button" value="Cancel order" class="btn pull-right"></div>   
+              	<div class="span6"><div class="cancel-order-btn"><input type="button" value="Cancel order" class="btn pull-right"></div>
+                  <div class="cancel-order-btn"><input type="button" value="Renew order" class="btn pull-right"></div>   </div>   
               </div>
               </div>
+
               <div class="box-content">
-                <form>
-                  <div class="cart-info">
-                    <table class="table-line">
-                      <thead>
-                        <tr>
-                          <td class="image">Image</td>
-                          <td class="name">Product Name</td>
-                          <td class="quantity">Quantity</td>
-                          <td class="price">Price</td>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="image td-w"><a href="#"><img title="Retro Design" alt="Retro Design " src="assets/img/01.png" style="height:70px;"></a></td>
-                          <td class="name"><a href="#">Inferno</a>
-                            <div> - <small>Author: Dan Brown</small><br>
-                            </div></td>
-                          <td class="quantity td-w">1</td>
-                          <td class="price td-w">€11.20
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="image"><a href="#"><img title="And the Mountains Echoed" src="assets/img/02.png" style="height:71px;"></a></td>
-                          <td class="name"><a href="#">And the Mountains Echoed</a>
-                            <div> - <small>Author: Dan Brown</small><br>
-                            </div></td>
-                          <td class="quantity">1</td>
-                          <td class="price">€8.94
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </form>
-                  <h2>Shipping address</h2>
-                  <div class="content_oc">
-                    <p>11 Kravchenko 111<br />
-                    Oleg Krasnov<br />
-                    Kravchenko<br />
-                    Moscow, 119415<br />
-                    AN, Russian Federation</p>
-                  </div>
-                  <h2>Billing method</h2>
-                  <div class="content_oc">
-                    <p>Cash on Delivery</p>
-                  </div>
-                <div class="cart-total">
-                  <table id="total">
-                    <tbody>
-                      <tr>
-                        <td class="right"><b>Sub-Total:</b></td>
-                        <td class="right">€20.14</td>
-                      </tr>
-                      <tr>
-                        <td class="right"><b>Eco Tax (-2.00):</b></td>
-                        <td class="right">€4.00</td>
-                      </tr>
-                      <tr>
-                        <td class="right"><b>VAT (17.5%):</b></td>
-                        <td class="right">€3.52</td>
-                      </tr>
-                      <tr>
-                        <td class="right"><b>Total:</b></td>
-                        <td class="right">€27.66</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
+
+      <h2>Billing Address </h2>
+      <div class="content_oc">
+      <div class="address vcard">
+  <div class="fn">Oleg Krasnov</div>
+  <div class="adr">
+    <div class="street-address">
+      <div class="street-address-line">
+        Kravchenko
+      </div>
+    </div>
+    <div class="local">
+      <span class="locality">Moscow</span>
+      <span class="region"></span>
+      <span class="postal-code">119415</span>
+      <div class="country-name">United Kingdom</div>
+    </div>
+  </div>
+    <div class="tel">
+      <span class="type">Tel</span>
+      12345678
+    </div>
+</div>
+
+      </div>
+
+        <h2>Shipping Address </h2>
+        <div class="content_oc">
+        <div class="address vcard">
+  <div class="fn">Oleg Krasnov</div>
+  <div class="adr">
+    <div class="street-address">
+      <div class="street-address-line">
+        Kravchenko
+      </div>
+    </div>
+    <div class="local">
+      <span class="locality">Moscow</span>
+      <span class="region"></span>
+      <span class="postal-code">119415</span>
+      <div class="country-name">United Kingdom</div>
+    </div>
+  </div>
+    <div class="tel">
+      <span class="type">Tel</span>
+      12345678
+    </div>
+</div>
+
+      </div>
+
+        <h2>Shipments </h2>
+        <div class="delivery content_oc">
+            <div>
+              <i class="fa fa-truck"></i>
+              From default via Direct Rate (3 kgs) Air
+            </div>
+        </div>
+        
+      </div>
+
+      <div class="columns omega four">
+    <h2>Payment Information </h2>
+    <div class="payment-info content_oc">
+          <span>Check</span>
+<br>
+    </div>
+  </div>
+
+      <div class="cart-info">
+<table id="line-items" class=" table-line index columns alpha omega sixteen" data-hook="order_details">
+  <colgroup><col width="15%" valign="middle" halign="center">
+  <col width="70%" valign="middle">
+  <col width="5%" valign="middle" halign="center">
+  <col width="5%" valign="middle" halign="center">
+  <col width="5%" valign="middle" halign="center">
+
+  </colgroup><thead data-hook="">
+  <tr data-hook="order_details_line_items_headers">
+    <td colspan="2">Item</td>
+    <td class="quantity">Qty</td>
+    <td class="price">Price</td>
+    <td class="total"><span>Total</span></td>
+  </tr>
+  </thead>
+
+  <tbody data-hook="">
+      <tr data-hook="order_details_line_item_row">
+        <td data-hook="order_item_image" class="image td-w">
+            <a href="/products/the-fault-in-our-stars"><img alt="Best001" height="50px" src="assets/img/01.png"></a>
+        </td>
+        <td data-hook="order_item_description" class="name">
+          <h4><a href="/products/the-fault-in-our-stars">The Fault in Our Stars</a></h4>
+          <div> - <small>There are the 10.7 million copies of John Green's book, The Fault In Our Stars, sold to date, the...
+          </small><br></div>
+        </td>
+        <td data-hook="order_item_price" class="price td-w"><span>1</span></td>
+        <td data-hook="order_item_qty" class="quantity td-w">$5.19</td>
+        <td data-hook="order_item_total" class="total td-w"><span>$5.19</span></td>
+      </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="cart-total">
+  <table id="total">
+    <tbody>
+      <tr>
+        <td class="right"><b>Subtotal:</b></td>
+        <td class="right total-sum">$5.19</td>
+      </tr>
+
+
+      <tr>
+        <td class="right"><b>Shipping: <strong>Direct Rate (3 kgs) Air</strong></b></td>
+        <td class="right total-sum">$3.00</td>
+      </tr>
+
+
+
+
+      <tr>
+        <td class="right"><b>Order Total:</b></td>
+        <td class="right total-sum">$8.19</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+
             </div>
           </div>
         </div>

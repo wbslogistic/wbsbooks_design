@@ -170,7 +170,7 @@
               <div class="box-content">
                 <p>If you already have an account with us, please login at the <a href="login.html">login page</a>.</p>
                 <form enctype="multipart/form-data" method="post">
-                  <h2>Your Personal Details</h2>
+                  <h2>My Account</h2>
                   <div class="content_oc">
                     <table class="form">
                       <tbody>
@@ -186,13 +186,48 @@
                           <td><span class="required">*</span> E-Mail:</td>
                           <td><input type="text" value="" name="email" style="width: 120px !important;"></td>
                         </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h2>Company details</h2>
+                  <div class="content_oc">
+                    <table class="form">
+                      <tbody>
                         <tr>
-                          <td><span class="required">*</span> Telephone:</td>
-                          <td><input type="text" value="" name="telephone" style="width: 120px !important;"></td>
+                          <td><span class="required">*</span> Account type:</td>
+                          <td><input type="radio" value="individual" name="accounttype">
+                            Individual
+                            <input type="radio" value="company" checked="checked" name="accounttype" class="m-l-10">
+                            Company
+                          </td>
+                        </tr>
+                       <tr>
+                          <td><span class="required">*</span> Company name:</td>
+                          <td><input type="text" value="" name="address_1" style="width: 120px !important;"></td>
                         </tr>
                         <tr>
-                          <td>Fax:</td>
-                          <td><input type="text" value="" name="fax" style="width: 120px !important;"></td>
+                          <td><span class="required"></span>Registered Number:</td>
+                          <td><input type="text" value="" name="address_1" style="width: 120px !important;"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required">*</span> Country of registration:</td>
+                          <td><select name="country_id" style="width: 200px !important;">
+                              <option value=""> --- Please Select --- </option>
+                              <option value="1">Afghanistan</option>
+                              <option value="2">Albania</option>
+                              <option value="3">Algeria</option>
+                              <option value="4">American Samoa</option>
+                              <option value="5">Andorra</option>
+                              <option value="6">Angola</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required"></span>VAT Number:</td>
+                          <td><input type="text" value="" name="address_1" style="width: 120px !important;"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required"></span>No. of years in business:</td>
+                          <td><input type="text" value="" name="address_1" style="width: 120px !important;"></td>
                         </tr>
                       </tbody>
                     </table>
@@ -201,38 +236,20 @@
                   <div class="content_oc">
                     <table class="form">
                       <tbody>
-                        <tr>
-                          <td>Company:</td>
-                          <td><input type="text" value="" name="company" style="width: 120px !important;"></td>
-                        </tr>
-                        <tr style="display: none;">
-                          <td>Business Type:</td>
-                          <td><input type="radio" checked="checked" id="customer_group_id1" value="1" name="customer_group_id">
-                            <label for="customer_group_id1">Default</label>
-                            <br></td>
-                        </tr>
-                        <tr id="company-id-display">
-                          <td><span class="required" id="company-id-required" style="display: none;">*</span> Company ID:</td>
-                          <td><input type="text" value="" name="company_id" style="width: 120px !important;"></td>
-                        </tr>
-                        <tr id="tax-id-display" style="display: none;">
-                          <td><span class="required" id="tax-id-required">*</span> Tax ID:</td>
-                          <td><input type="text" value="" name="tax_id" style="width: 120px !important;"></td>
-                        </tr>
-                        <tr>
-                          <td><span class="required">*</span> Address 1:</td>
+                       <tr>
+                          <td><span class="required">*</span> Street Address:</td>
                           <td><input type="text" value="" name="address_1" style="width: 120px !important;"></td>
                         </tr>
                         <tr>
-                          <td>Address 2:</td>
-                          <td><input type="text" value="" name="address_2" style="width: 120px !important;"></td>
+                          <td><span class="required"></span> Suburb:</td>
+                          <td><input type="text" value="" name="address_1" style="width: 120px !important;"></td>
                         </tr>
                         <tr>
-                          <td><span class="required">*</span> City:</td>
+                          <td><span class="required">*</span> Post Code:</td>
                           <td><input type="text" value="" name="city" style="width: 120px !important;"></td>
                         </tr>
                         <tr>
-                          <td><span class="required" id="postcode-required">*</span> Post Code:</td>
+                          <td><span class="required" id="postcode-required">*</span> City:</td>
                           <td><input type="text" value="" name="postcode" style="width: 120px !important;"></td>
                         </tr>
                         <tr>
@@ -263,6 +280,71 @@
                       </tbody>
                     </table>
                   </div>
+                  <h2>Office Address (if different from above)</h2>
+                  <div class="content_oc">
+                    <table class="form">
+                      <tbody>
+                       <tr>
+                          <td><span class="required"></span>Street Address:</td>
+                          <td><input type="text" value="" name="address_1" style="width: 120px !important;"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required"></span>Suburb:</td>
+                          <td><input type="text" value="" name="address_1" style="width: 120px !important;"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required"></span>Post Code:</td>
+                          <td><input type="text" value="" name="city" style="width: 120px !important;"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required" id="postcode-required"></span>City:</td>
+                          <td><input type="text" value="" name="postcode" style="width: 120px !important;"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required"></span> Country:</td>
+                          <td><select name="country_id" style="width: 200px !important;">
+                              <option value=""> --- Please Select --- </option>
+                              <option value="1">Afghanistan</option>
+                              <option value="2">Albania</option>
+                              <option value="3">Algeria</option>
+                              <option value="4">American Samoa</option>
+                              <option value="5">Andorra</option>
+                              <option value="6">Angola</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required"></span> Region / State:</td>
+                          <td><select name="zone_id" style="width: 200px !important;">
+                              <option value=""> --- Please Select --- </option>
+                              <option value="3513">Aberdeen</option>
+                              <option value="3514">Aberdeenshire</option>
+                              <option value="3515">Anglesey</option>
+                              <option value="3516">Angus</option>
+                              <option value="3517">Argyll and Bute</option>
+                              <option value="3518">Bedfordshire</option>
+                              <option value="3519">Berkshire</option>
+                            </select></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <h2>Your Contact Information</h2>
+                  <div class="content_oc">
+                    <table class="form">
+                      <tbody>
+                        <tr>
+                          <td><span class="required">*</span> Telephone:</td>
+                          <td><input type="text" value="" name="telephone" style="width: 120px !important;"></td>
+                        </tr>
+                        <tr>
+                          <td>Fax:</td>
+                          <td><input type="text" value="" name="fax" style="width: 120px !important;"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
                   <h2>Your Password</h2>
                   <div class="content_oc">
                     <table class="form">
@@ -278,15 +360,17 @@
                       </tbody>
                     </table>
                   </div>
+
+
                   <h2>Newsletter</h2>
                   <div class="content_oc">
                     <table class="form">
                       <tbody>
                         <tr>
                           <td>Subscribe:</td>
-                          <td><input type="radio" value="1" name="newsletter">
+                          <td><input type="radio" checked="checked" value="1" name="newsletter">
                             Yes
-                            <input type="radio" checked="checked" value="0" name="newsletter" class="m-l-10">
+                            <input type="radio" value="0" name="newsletter" class="m-l-10">
                             No </td>
                         </tr>
                       </tbody>

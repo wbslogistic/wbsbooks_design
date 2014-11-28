@@ -1,7 +1,7 @@
 
 
 .mijoshop_heading_h1 {
-    color: #000 !important;
+    color:#f0141e !important;
     font-family: 'Roboto',sans-serif !important;
     font-size: 15px !important;
     font-weight: 400;
@@ -520,7 +520,7 @@
 }
 .product-info .price {
     border-bottom: 0 none;
-    color: #000;
+    color: #f0141e;
     font-size: 250%;
     padding: 0;
 }
@@ -811,7 +811,7 @@
     font-weight: 700;
 }
 .cart-info tbody .name small {
-    color: #888;
+    color: #000;
     font-size: 12px;
 }
 .cart-total {
@@ -879,10 +879,10 @@ table.radio td {
 }
 .cart-total tr td {
     border-color: #eee;
-    color: #444;
+    color: #f0141e;
     font-weight: 300;
     padding: 10px 0;
-    text-align: left;
+    text-align: right;
 	/*padding-right: 148px;*/
 }
 .cart-total tr td:last-child {

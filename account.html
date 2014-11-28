@@ -177,8 +177,8 @@
               <div class="tab-content">
                 <div id="lA" class="tab-pane active">
 
-				<form enctype="multipart/form-data" method="post" action="#">
-                  <h2>My Personal Details</h2>
+                <form enctype="multipart/form-data" method="post">
+                  <h2>My Account</h2>
                   <div class="content_oc">
                     <table class="form">
                       <tbody>
@@ -194,164 +194,200 @@
                           <td><span class="required">*</span> E-Mail:</td>
                           <td><input type="text" value="" name="email" style="width: 120px !important;"></td>
                         </tr>
-                        <tr>
-                          <td><span class="required">*</span> Account type:</td>
-                          <td><input type="radio" value="1" name="accounttype">
-                            Individual
-                            <input type="radio" checked="checked" value="0" name="accounttype" class="m-l-10">
-                            Company </td>
-                        </tr>
                       </tbody>
                     </table>
                   </div>
-                  
-                  <div>
-                  	<div class="col-md-6" style="padding-left:0;">
-                      <h2>Your Address</h2>
-                      <div class="content_oc">
-                        <table class="form">
-                          <tbody>
-                            <tr>
-                              <td>Street Address:</td>
-                              <td><input type="text" value="" name="address_1" style="width: 120px !important;"></td>
-                            </tr>
-                            <tr id="company-id-display">
-                              <td>Suburb:</td>
-                              <td><input type="text" value="" name="address_2" style="width: 120px !important;"></td>
-                            </tr>
-                            <tr>
-                              <td><span class="required">*</span> Post Code:</td>
-                              <td><input type="text" value="" name="postcode" style="width: 120px !important;"></td>
-                            </tr>
-                            <tr>
-                              <td><span class="required">*</span> City:</td>
-                              <td><input type="text" value="" name="address_3" style="width: 120px !important;"></td>
-                            </tr>
-                            <tr>
-                              <td><span class="required">*</span> Region / State:</td>
-                              <td><select name="zone_id">
-                                  <option value=""> --- Please Select --- </option>
-                                  <option value="3513">Aberdeen</option>
-                                  <option value="3514">Aberdeenshire</option>
-                                  <option value="3515">Anglesey</option>
-                                </select></td>
-                            </tr>
-                            <tr>
-                              <td><span class="required">*</span> Country:</td>
-                              <td><select name="country_id">
-                                  <option value=""> --- Please Select --- </option>
-                                  <option value="1">Afghanistan</option>
-                                  <option value="2">Albania</option>
-                                  <option value="3">Algeria</option>
-                                  <option value="4">American Samoa</option>
-                                </select></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                    
-                    <div class="col-md-6" style="padding-right:0;">
-                      <h2>Office Address</h2>
-                      <div class="content_oc">
-                        <table class="form">
-                          <tbody>
-                            <tr>
-                              <td>Street Address:</td>
-                              <td><input type="text" value="" name="address_1" style="width: 120px !important;"></td>
-                            </tr>
-                            <tr id="company-id-display">
-                              <td>Suburb:</td>
-                              <td><input type="text" value="" name="address_2" style="width: 120px !important;"></td>
-                            </tr>
-                            <tr>
-                              <td><span class="required">*</span> Post Code:</td>
-                              <td><input type="text" value="" name="postcode" style="width: 120px !important;"></td>
-                            </tr>
-                            <tr>
-                              <td><span class="required">*</span> City:</td>
-                              <td><input type="text" value="" name="address_3" style="width: 120px !important;"></td>
-                            </tr>
-                            <tr>
-                              <td><span class="required">*</span> Region / State:</td>
-                              <td><select name="zone_id">
-                                  <option value=""> --- Please Select --- </option>
-                                  <option value="3513">Aberdeen</option>
-                                  <option value="3514">Aberdeenshire</option>
-                                  <option value="3515">Anglesey</option>
-                                  <option value="3516">Angus</option>
-                                  <option value="3517">Argyll and Bute</option>
-                                </select></td>
-                            </tr>
-                            <tr>
-                              <td><span class="required">*</span> Country:</td>
-                              <td><select name="country_id">
-                                  <option value=""> --- Please Select --- </option>
-                                  <option value="1">Afghanistan</option>
-                                  <option value="2">Albania</option>
-                                </select></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <h2>Office Address</h2>
+                  <h2>Company details</h2>
                   <div class="content_oc">
                     <table class="form">
                       <tbody>
                         <tr>
-                          <td>Accounts Payable:</td>
-                          <td style="width: 120px !important;"><input type="text" value="" name="accountspayable_1" style="width: 120px !important;"></td>
-                          <td><input type="text" value="" name="accountspayable_2" style="width: 120px !important;" placeholder="Phone number"></td>
+                          <td><span class="required">*</span> Account type:</td>
+                          <td><input type="radio" value="individual" name="accounttype">
+                            Individual
+                            <input type="radio" value="company" checked="checked" name="accounttype" class="m-l-10">
+                            Company
+                          </td>
+                        </tr>
+                       <tr>
+                          <td><span class="required">*</span> Company name:</td>
+                          <td><input type="text" value="" name="address_1" style="width: 120px !important;"></td>
                         </tr>
                         <tr>
-                          <td>Financial Director:</td>
-                          <td><input type="text" value="" name="findir_1" style="width: 120px !important;"></td>
-                          <td><input type="text" value="" name="findir_2" style="width: 120px !important;" placeholder="Phone number"></td>
+                          <td><span class="required"></span>Registered Number:</td>
+                          <td><input type="text" value="" name="address_1" style="width: 120px !important;"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required">*</span> Country of registration:</td>
+                          <td><select name="country_id" style="width: 200px !important;">
+                              <option value=""> --- Please Select --- </option>
+                              <option value="1">Afghanistan</option>
+                              <option value="2">Albania</option>
+                              <option value="3">Algeria</option>
+                              <option value="4">American Samoa</option>
+                              <option value="5">Andorra</option>
+                              <option value="6">Angola</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required"></span>VAT Number:</td>
+                          <td><input type="text" value="" name="address_1" style="width: 120px !important;"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required"></span>No. of years in business:</td>
+                          <td><input type="text" value="" name="address_1" style="width: 120px !important;"></td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
-                  
+                  <h2>Your Address</h2>
+                  <div class="content_oc">
+                    <table class="form">
+                      <tbody>
+                       <tr>
+                          <td><span class="required">*</span> Street Address:</td>
+                          <td><input type="text" value="" name="address_1" style="width: 120px !important;"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required"></span> Suburb:</td>
+                          <td><input type="text" value="" name="address_1" style="width: 120px !important;"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required">*</span> Post Code:</td>
+                          <td><input type="text" value="" name="city" style="width: 120px !important;"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required" id="postcode-required">*</span> City:</td>
+                          <td><input type="text" value="" name="postcode" style="width: 120px !important;"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required">*</span> Country:</td>
+                          <td><select name="country_id" style="width: 200px !important;">
+                              <option value=""> --- Please Select --- </option>
+                              <option value="1">Afghanistan</option>
+                              <option value="2">Albania</option>
+                              <option value="3">Algeria</option>
+                              <option value="4">American Samoa</option>
+                              <option value="5">Andorra</option>
+                              <option value="6">Angola</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required">*</span> Region / State:</td>
+                          <td><select name="zone_id" style="width: 200px !important;">
+                              <option value=""> --- Please Select --- </option>
+                              <option value="3513">Aberdeen</option>
+                              <option value="3514">Aberdeenshire</option>
+                              <option value="3515">Anglesey</option>
+                              <option value="3516">Angus</option>
+                              <option value="3517">Argyll and Bute</option>
+                              <option value="3518">Bedfordshire</option>
+                              <option value="3519">Berkshire</option>
+                            </select></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h2>Office Address (if different from above)</h2>
+                  <div class="content_oc">
+                    <table class="form">
+                      <tbody>
+                       <tr>
+                          <td><span class="required"></span>Street Address:</td>
+                          <td><input type="text" value="" name="address_1" style="width: 120px !important;"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required"></span>Suburb:</td>
+                          <td><input type="text" value="" name="address_1" style="width: 120px !important;"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required"></span>Post Code:</td>
+                          <td><input type="text" value="" name="city" style="width: 120px !important;"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required" id="postcode-required"></span>City:</td>
+                          <td><input type="text" value="" name="postcode" style="width: 120px !important;"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required"></span> Country:</td>
+                          <td><select name="country_id" style="width: 200px !important;">
+                              <option value=""> --- Please Select --- </option>
+                              <option value="1">Afghanistan</option>
+                              <option value="2">Albania</option>
+                              <option value="3">Algeria</option>
+                              <option value="4">American Samoa</option>
+                              <option value="5">Andorra</option>
+                              <option value="6">Angola</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required"></span> Region / State:</td>
+                          <td><select name="zone_id" style="width: 200px !important;">
+                              <option value=""> --- Please Select --- </option>
+                              <option value="3513">Aberdeen</option>
+                              <option value="3514">Aberdeenshire</option>
+                              <option value="3515">Anglesey</option>
+                              <option value="3516">Angus</option>
+                              <option value="3517">Argyll and Bute</option>
+                              <option value="3518">Bedfordshire</option>
+                              <option value="3519">Berkshire</option>
+                            </select></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
                   <h2>Your Contact Information</h2>
                   <div class="content_oc">
                     <table class="form">
                       <tbody>
                         <tr>
-                          <td>Telephone Number:</td>
-                          <td style="width: 120px !important;"><input type="text" value="" name="telephone_1" style="width: 120px !important;"></td>
-                          <td><input type="text" value="" name="telephone_2" style="width: 120px !important;" placeholder="Phone number"></td>
+                          <td><span class="required">*</span> Telephone:</td>
+                          <td><input type="text" value="" name="telephone" style="width: 120px !important;"></td>
                         </tr>
                         <tr>
-                          <td>Fax Number:</td>
-                          <td><input type="text" value="" name="fax_1" style="width: 120px !important;"></td>
-                          <td><input type="text" value="" name="fax_2" style="width: 120px !important;" placeholder="Phone number"></td>
+                          <td>Fax:</td>
+                          <td><input type="text" value="" name="fax" style="width: 120px !important;"></td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
-                  
+
+                  <h2>Your Password</h2>
+                  <div class="content_oc">
+                    <table class="form">
+                      <tbody>
+                        <tr>
+                          <td><span class="required">*</span> Password:</td>
+                          <td><input type="password" value="" name="password" style="width: 120px !important;"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="required">*</span> Password Confirm:</td>
+                          <td><input type="password" value="" name="confirm" style="width: 120px !important;"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+
                   <h2>Newsletter</h2>
                   <div class="content_oc">
                     <table class="form">
                       <tbody>
                         <tr>
                           <td>Subscribe:</td>
-                          <td><input type="radio" value="1" name="newsletter">
+                          <td><input type="radio" checked="checked" value="1" name="newsletter">
                             Yes
-                            <input type="radio" checked="checked" value="0" name="newsletter" class="m-l-10">
+                            <input type="radio" value="0" name="newsletter" class="m-l-10">
                             No </td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
-                  
                   <div class="buttons">
-                    <div>
-                      <input type="submit" class="btn btn-primary" value="Save">
-                      <input type="submit" class="btn" value="Cancel">
+                    <div class="right">I have read and agree to the <a alt="Privacy Policy" href="#" class="colorbox cboxElement"><b>Privacy Policy</b></a>
+                      <input type="checkbox" value="1" name="agree">
+                      <input type="submit" class="btn btn-primary m-l-10" value="Continue">
                     </div>
                   </div>
                 </form>
@@ -366,11 +402,15 @@
                         <table class="form">
                           <tbody>
                             <tr>
-                              <td><span class="required">*</span> Password:</td>
+                              <td><span class="required">*</span> Current Password:</td>
                               <td><input type="password" value="" name="password" style="width: 120px !important;"></td>
                             </tr>
                             <tr>
-                              <td><span class="required">*</span> Password Confirm:</td>
+                              <td><span class="required">*</span> New Password:</td>
+                              <td><input type="password" value="" name="password" style="width: 120px !important;"></td>
+                            </tr>
+                            <tr>
+                              <td><span class="required">*</span> Confirm Password:</td>
                               <td><input type="password" value="" name="confirm" style="width: 120px !important;"></td>
                             </tr>
                           </tbody>

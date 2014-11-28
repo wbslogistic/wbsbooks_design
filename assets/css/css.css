@@ -16,3 +16,22 @@
   font-weight: 700;
   src: local('Roboto Bold'), local('Roboto-Bold'), url(http://themes.googleusercontent.com/static/fonts/roboto/v11/d-6IYplOFocCacKzxwXSOD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
+
+.product-arror-block {
+  width: 20px !important;
+  padding-top: 94px !important;
+}
+
+.black-link {
+  color: #000;
+}
+
+.fa-account {
+  display: inline;
+  float: left;
+  padding: 5px 1px;
+}
+
+.cancel-order-btn input {
+  margin-left: 5px;
+}
